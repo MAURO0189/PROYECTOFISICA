@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Scrips/VoltajedeWatt.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Voltaje de Watt</h1>
+        <label>Ingresa la POTENCIA</label>
+        <input type="number" id="potencia">
+
+        <label>Ingresa el INTENSIDAD</label>
+        <input type="number" id="intensidad">
+
+        <input type="button" value="Calcular" onclick="calcularVoltajeWatt()">
+        <input type="reset" value="Limpiar">
+    </form>
+    <p id="result"> </p>
+</body>
+</html>
