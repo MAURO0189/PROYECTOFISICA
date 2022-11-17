@@ -21,16 +21,16 @@
     <link rel="stylesheet" href="css/bootstrap.rtl.css">
     <link rel="stylesheet" href="css/bootstrap.rtl.css.map">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/VoltajedeWatt.js"></script>
-    <script src="js/PotenciaWatt.js"></script>
-    <script src="js/IntensidadWatt.js"></script>
- 
+    <script src="js/ResistenciaOhm.js"></script>
+    <script src="js/CalcularCorrienteOhm.js"></script>
+    <script src="js/Voltajeohm.js"></script>
+
     <title>CALCULO MAGNITUDES FISICAS</title>
 </head>
 <body class="body">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand">Magnitudes Electricas</a>
+          <a class="navbar-brand">Magnitudes fisicas</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,53 +52,53 @@
     <div class="container my-4">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <h1><img src="img/lightning-fill.svg" alt="icono">Ley de Watt</h1>
+                <h1><img src="img/lightning-fill.svg" alt="icono">Ley de Ohm</h1>
                 <form action="#">
-                    <h2>Voltaje</h2>
-                    <label>Ingrese Datos</label>
-                    <input type="number" id="potencia" placeholder="POTENCIA">
-            
-                    <label>Ingrese Datos</label>
-                    <input type="number" id="intensidad" placeholder="INTENSIDAD">
-            
-                    <input class="btn btn-success" type="button" value="Calcular" onclick="calcularVoltajeWatt()"><img src="img/calculator-fill.svg" alt="icono"></label>
-                    <input class="btn btn-danger"type="reset" value="Limpiar"><img src="img/trash-fill.svg" alt="icono">
-                </form>
+                  <h2>voltaje</h2>
+                  <label>Ingrese Datos</label>
+                  <input type="number" id="corriente" placeholder="CORRIENTE">
+          
+                  <label>Ingrese Datos</label>
+                  <input type="number" id="resistencia" placeholder="RESISTENCIA">
+          
+                  <input class="btn btn-success"type="button" value="Calcular" onclick="calcularVoltajeohm()"><img src="img/calculator-fill.svg" alt="icono">
+                  <input class="btn btn-danger"type="reset" value="Limpiar"><img src="img/trash-fill.svg" alt="icono">
+              </form>
                 <form action="#">
-                    <h2>Intensidad</h2>
-                    <label>Ingrese Datos</label>
-                    <input type="number" id="potencia" placeholder="POTENCIA">
-            
-                    <label>Ingrese Datos</label>
-                    <input type="number" id="voltaje" placeholder="VOLTAJE">
-            
-                    <input class="btn btn-success" type="button" value="Calcular" onclick="calcularIntensidadWatt()"><img src="img/calculator-fill.svg" alt="icono"></label>
-                    <input  class="btn btn-danger" type="reset" value="Limpiar"><img src="img/trash-fill.svg" alt="icono">
-                </form>
+                  <h2>Corriente</h2>
+                  <label>Ingrese Datos</label>
+                  <input type="number" id="voltaje" placeholder="VOLTAJE">
+          
+                  <label>Ingrese Datos</label>
+                  <input type="number" id="resistencia" placeholder="RESISTENCIA">
+          
+                  <input class="btn btn-success" type="button" value="Calcular" onclick="calcularCorrienteOhm()"><img src="img/calculator-fill.svg" alt="icono">
+                  <input class="btn btn-danger" type="reset" value="Limpiar"><img src="img/trash-fill.svg" alt="icono">
+              </form>
                 <form action="#">
-                    <h2>Potencia</h2>
-                    <label>Ingrese Datos</label>
-                    <input type="number" id="intensidad" placeholder="INTENSIDAD">
-            
-                    <label>Ingrese Datos</label>
-                    <input type="number" id="voltaje" placeholder="VOLTAJE">
-            
-                    <input class="btn btn-success" type="button" value="Calcular" onclick="calcularPotenciaWatt()"><img src="img/calculator-fill.svg" alt="icono"></label>
-                    <input class="btn btn-danger" type="reset" value="Limpiar"><img src="img/trash-fill.svg" alt="icono">
-                </form>
+                  <h2>Resistencia</h2>
+                  <label>Ingrese Datos</label>
+                  <input type="number" id="voltaje" placeholder="VOLTAJE">
+          
+                  <label>Ingrese Datos</label>
+                  <input type="number" id="intensidad" placeholder="INTENSIDAD">
+          
+                  <input class="btn btn-success" type="button" value="Calcular" onclick="calcularResistenciaohm()"><img src="img/calculator-fill.svg" alt="icono">
+                  <input class="btn btn-danger" type="reset" value="Limpiar"><img src="img/trash-fill.svg" alt="icono">
+              </form>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <h1>Resultados</h1>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <label for="exampleFormControlTextarea1" class="form-label"></label></label>
                     <textarea class="form-control" id="resultados1" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <label for="exampleFormControlTextarea1" class="form-label"></label></label>
                     <textarea class="form-control" id="resultados2" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <label for="exampleFormControlTextarea1" class="form-label"></label></label>
                     <textarea class="form-control" id="resultados3" rows="3"></textarea>
                 </div>
             </div>
